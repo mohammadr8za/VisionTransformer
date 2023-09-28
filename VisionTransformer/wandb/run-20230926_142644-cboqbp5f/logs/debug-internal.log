@@ -1,0 +1,64 @@
+2023-09-26 14:26:44,278 INFO    StreamThr :9080 [internal.py:wandb_internal():86] W&B internal server running at pid: 9080, started at: 2023-09-26 14:26:44.278627
+2023-09-26 14:26:44,278 DEBUG   HandlerThread:9080 [handler.py:handle_request():144] handle_request: status
+2023-09-26 14:26:44,316 INFO    WriterThread:9080 [datastore.py:open_for_write():85] open: D:\mreza\TestProjects\Python\DL\ViT\VisionTransformer\wandb\run-20230926_142644-cboqbp5f\run-cboqbp5f.wandb
+2023-09-26 14:26:44,316 DEBUG   SenderThread:9080 [sender.py:send():369] send: header
+2023-09-26 14:26:44,316 DEBUG   SenderThread:9080 [sender.py:send():369] send: run
+2023-09-26 14:26:47,687 INFO    SenderThread:9080 [retry.py:__call__():172] Retry attempt failed:
+urllib3.exceptions.SSLError: EOF occurred in violation of protocol (_ssl.c:1131)
+
+The above exception was the direct cause of the following exception:
+
+urllib3.exceptions.ProxyError: ('Unable to connect to proxy', SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)')))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pmreza\miniconda3\envs\main\lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "C:\Users\pmreza\miniconda3\envs\main\lib\site-packages\urllib3\connectionpool.py", line 844, in urlopen
+    retries = retries.increment(
+  File "C:\Users\pmreza\miniconda3\envs\main\lib\site-packages\urllib3\util\retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ProxyError('Unable to connect to proxy', SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)'))))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\pmreza\miniconda3\envs\main\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "C:\Users\pmreza\miniconda3\envs\main\lib\site-packages\wandb\sdk\internal\internal_api.py", line 320, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "C:\Users\pmreza\miniconda3\envs\main\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "C:\Users\pmreza\miniconda3\envs\main\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "C:\Users\pmreza\miniconda3\envs\main\lib\site-packages\wandb\sdk\lib\gql_request.py", line 55, in execute
+    request = self.session.post(self.url, **post_args)
+  File "C:\Users\pmreza\miniconda3\envs\main\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "C:\Users\pmreza\miniconda3\envs\main\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\pmreza\miniconda3\envs\main\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\pmreza\miniconda3\envs\main\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ProxyError('Unable to connect to proxy', SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)'))))
+2023-09-26 14:26:49,289 DEBUG   HandlerThread:9080 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-26 14:26:54,301 DEBUG   HandlerThread:9080 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-26 14:26:59,317 DEBUG   HandlerThread:9080 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-26 14:27:04,329 DEBUG   HandlerThread:9080 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-26 14:27:09,341 DEBUG   HandlerThread:9080 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-26 14:27:14,365 DEBUG   HandlerThread:9080 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-26 14:27:19,376 DEBUG   HandlerThread:9080 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-26 14:27:24,388 DEBUG   HandlerThread:9080 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-26 14:27:29,428 DEBUG   HandlerThread:9080 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-26 14:27:34,491 DEBUG   HandlerThread:9080 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-26 14:27:39,504 DEBUG   HandlerThread:9080 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-26 14:27:44,552 DEBUG   HandlerThread:9080 [handler.py:handle_request():144] handle_request: cancel
+2023-09-26 14:27:44,552 DEBUG   SenderThread:9080 [sender.py:send():378] Record cancelled: run
+2023-09-26 14:27:44,552 DEBUG   HandlerThread:9080 [handler.py:handle_request():144] handle_request: cancel
+2023-09-26 14:27:44,552 DEBUG   HandlerThread:9080 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 14:27:44,667 DEBUG   HandlerThread:9080 [handler.py:handle_request():144] handle_request: shutdown
+2023-09-26 14:27:44,667 INFO    HandlerThread:9080 [handler.py:finish():854] shutting down handler
+2023-09-26 14:27:45,558 INFO    WriterThread:9080 [datastore.py:close():298] close: D:\mreza\TestProjects\Python\DL\ViT\VisionTransformer\wandb\run-20230926_142644-cboqbp5f\run-cboqbp5f.wandb
+2023-09-26 14:27:45,558 INFO    SenderThread:9080 [sender.py:finish():1526] shutting down sender
