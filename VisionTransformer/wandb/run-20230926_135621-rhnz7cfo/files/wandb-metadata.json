@@ -1,0 +1,47 @@
+{
+    "os": "Windows-10-10.0.19045-SP0",
+    "python": "3.11.5",
+    "heartbeatAt": "2023-09-26T10:26:24.900426",
+    "startedAt": "2023-09-26T10:26:21.161727",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "D:/mreza/TestProjects/Python/DL/ViT/VisionTransformer/main.py",
+    "codePathLocal": "main.py",
+    "codePath": "main.py",
+    "host": "Retina",
+    "username": "Retina",
+    "executable": "C:\\Users\\pmreza\\miniconda3\\envs\\modelsummary\\python.exe",
+    "cpu_count": 10,
+    "cpu_count_logical": 20,
+    "cpu_freq": {
+        "current": 3001.0,
+        "min": 0.0,
+        "max": 3001.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3001.0,
+            "min": 0.0,
+            "max": 3001.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 931.5117149353027,
+            "used": 720.3705940246582
+        }
+    },
+    "gpu": "NVIDIA GeForce GTX 1080 Ti",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce GTX 1080 Ti",
+            "memory_total": 11811160064
+        }
+    ],
+    "memory": {
+        "total": 31.910099029541016
+    }
+}

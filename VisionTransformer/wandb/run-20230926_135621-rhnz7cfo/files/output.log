@@ -1,0 +1,36 @@
+_________ Epoch: 1 _________
+BS: 8| LR: 1e-05| Dropout: 0.05| Gamma: 0.995| Lambda: 1e-06| Device: cpu
+  0%|          | 0/100 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "C:\Program Files\JetBrains\PyCharm 2022.2\plugins\python\helpers\pydev\pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\JetBrains\PyCharm 2022.2\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "D:/mreza/TestProjects/Python/DL/ViT/VisionTransformer/main.py", line 62, in <module>
+    train(model=model,
+  File "D:\mreza\TestProjects\Python\DL\ViT\VisionTransformer\engine.py", line 49, in train
+    output = model(input_data)
+             ^^^^^^^^^^^^^^^^^
+  File "C:\Users\pmreza\miniconda3\envs\modelsummary\Lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\mreza\TestProjects\Python\DL\ViT\VisionTransformer\models\Model.py", line 136, in forward
+    x = self.patch_embedding(x)
+        ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pmreza\miniconda3\envs\modelsummary\Lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\mreza\TestProjects\Python\DL\ViT\VisionTransformer\PatchEmbedding.py", line 33, in forward
+    x_patched = self.patcher(x)
+                ^^^^^^^^^^^^^^^
+  File "C:\Users\pmreza\miniconda3\envs\modelsummary\Lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pmreza\miniconda3\envs\modelsummary\Lib\site-packages\torch\nn\modules\conv.py", line 463, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pmreza\miniconda3\envs\modelsummary\Lib\site-packages\torch\nn\modules\conv.py", line 459, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Input type (unsigned char) and bias type (float) should be the same
