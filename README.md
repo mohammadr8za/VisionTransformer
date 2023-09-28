@@ -1,4 +1,4 @@
-#  Vision Transformer for Multiclass Classification
+#  Vision Transformer for Multiclass Classification 👁️👁
 
 This repository contains an implementation of a Vision Transformer model for multiclass classification tasks. The implemented model includes the necessary components such as patch extraction and positional embedding, enabling the Vision Transformer to effectively process and classify images.
 
@@ -25,22 +25,23 @@ By combining the patch extraction, positional embedding, and self-attention mech
 
 ## Requirements
 
-    Python 3.x
-    Deep learning framework (e.g., PyTorch, TensorFlow, Keras)
-    Dataset(s) for training and evaluation
+* Python 3.x
+* Deep learning framework (PyTorch)
+* Dataset(s) for training and evaluation
 
 ## Usage
 
-    Install the required dependencies specified in the requirements.txt file.
-    Prepare the dataset(s) for training and evaluation.
-    Adjust the hyperparameters and configurations in the provided scripts to fit your specific use case.
-    Run the training script to train the Vision Transformer model on your dataset.
-    Evaluate the trained model using the evaluation script.
-    Fine-tune the model or experiment with different configurations to improve performance if desired.
+* Install the required dependencies specified in the requirements.txt file.
+* Prepare the dataset(s) for training and evaluation.
+* Adjust the hyperparameters and configurations in the provided scripts to fit your specific use case.
+* Run the "main" script to train the Vision Transformer model on your dataset.
+* Evaluate the trained model using the evaluation metrics.
+* Fine-tune the model or experiment with different configurations to improve performance if desired.
 
 ## References
 
     Dosovitskiy, A., Beyer, L., Kolesnikov, A., Weissenborn, D., Zhai, X., Unterthiner, T., ... & Houlsby, N. (2020). An image is worth 16x16 words: Transformers for image recognition at scale. arXiv preprint arXiv:2010.11929.
     Khan, S., Anwar, S., Hayat, M., Gao, Y., & Barnes, N. (2021). TransGAN: Two Transformers Can Make One Strong GAN. arXiv preprint arXiv:2102.07074.
+
 
 Please feel free to customize and expand upon this description to provide more specific details about your implementation, such as any additional modifications or optimizations you have made to the patch extraction or positional embedding process.
