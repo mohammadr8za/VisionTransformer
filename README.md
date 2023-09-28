@@ -1,4 +1,4 @@
-#  Vision Transformer for Multiclass Classification 👁️👁
+#  Vision Transformer for Multiclass Classification 👁️
 
 This repository contains an implementation of a Vision Transformer model for multiclass classification tasks. The implemented model includes the necessary components such as patch extraction and positional embedding, enabling the Vision Transformer to effectively process and classify images.
 
