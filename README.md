@@ -1,6 +1,8 @@
 # Vision Transformer for Multiclass Classification
 
 This repository contains an implementation of a Vision Transformer model for multiclass classification tasks. The implemented model includes the necessary components such as patch extraction and positional embedding, enabling the Vision Transformer to effectively process and classify images.
+![35004Vit](https://github.com/mohammadr8za/VisionTransformer/assets/72736177/17435f3f-6a0a-47ea-b2f6-dce5475f99a6)
+
 ## Overview
 
 The Vision Transformer (ViT) is a deep learning architecture that applies the Transformer model, originally introduced for natural language processing tasks, to visual data. In this implementation, we have incorporated the crucial steps of patch extraction and positional embedding, which are essential for the proper functioning of the Vision Transformer.
