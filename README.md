@@ -12,14 +12,17 @@ The Vision Transformer (ViT) is a deep learning architecture that applies the Tr
 The patch extraction step divides the input image into smaller patches, treating each patch as a token. This process enables the model to capture local information within the image. The positional embedding step assigns learnable embeddings to each patch, providing the model with spatial information about the patches' locations.
 
 By combining the patch extraction, positional embedding, and self-attention mechanisms, the Vision Transformer can effectively model long-range interactions between image patches, leading to improved performance in image classification tasks.
-Features
 
+## Features
+
+***
     Implementation of the Vision Transformer model for multiclass image classification, incorporating patch extraction and positional embedding.
     Preprocessing pipeline to prepare the input images for the Vision Transformer.
     Training and evaluation scripts to facilitate model training and performance assessment.
     Fine-tuning capabilities to adapt the model to specific datasets.
     Support for various datasets commonly used in image classification, such as CIFAR-10, ImageNet, etc.
     Integration with popular deep learning libraries, such as PyTorch, TensorFlow, or Keras.
+
 
 ## Requirements
 
