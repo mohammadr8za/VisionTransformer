@@ -1,7 +1,7 @@
-Vision Transformer for Multiclass Classification
+# Vision Transformer for Multiclass Classification
 
 This repository contains an implementation of a Vision Transformer model for multiclass classification tasks. The implemented model includes the necessary components such as patch extraction and positional embedding, enabling the Vision Transformer to effectively process and classify images.
-Overview
+## Overview
 
 The Vision Transformer (ViT) is a deep learning architecture that applies the Transformer model, originally introduced for natural language processing tasks, to visual data. In this implementation, we have incorporated the crucial steps of patch extraction and positional embedding, which are essential for the proper functioning of the Vision Transformer.
 
@@ -17,13 +17,13 @@ Features
     Support for various datasets commonly used in image classification, such as CIFAR-10, ImageNet, etc.
     Integration with popular deep learning libraries, such as PyTorch, TensorFlow, or Keras.
 
-Requirements
+## Requirements
 
     Python 3.x
     Deep learning framework (e.g., PyTorch, TensorFlow, Keras)
     Dataset(s) for training and evaluation
 
-Usage
+## Usage
 
     Install the required dependencies specified in the requirements.txt file.
     Prepare the dataset(s) for training and evaluation.
@@ -32,7 +32,7 @@ Usage
     Evaluate the trained model using the evaluation script.
     Fine-tune the model or experiment with different configurations to improve performance if desired.
 
-References
+## References
 
     Dosovitskiy, A., Beyer, L., Kolesnikov, A., Weissenborn, D., Zhai, X., Unterthiner, T., ... & Houlsby, N. (2020). An image is worth 16x16 words: Transformers for image recognition at scale. arXiv preprint arXiv:2010.11929.
     Khan, S., Anwar, S., Hayat, M., Gao, Y., & Barnes, N. (2021). TransGAN: Two Transformers Can Make One Strong GAN. arXiv preprint arXiv:2102.07074.
