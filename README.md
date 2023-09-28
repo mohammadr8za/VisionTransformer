@@ -45,4 +45,5 @@ By combining the patch extraction, positional embedding, and self-attention mech
     Khan, S., Anwar, S., Hayat, M., Gao, Y., & Barnes, N. (2021). TransGAN: Two Transformers Can Make One Strong GAN. arXiv preprint arXiv:2102.07074.
 
 
+
 Please feel free to customize and expand upon this description to provide more specific details about your implementation, such as any additional modifications or optimizations you have made to the patch extraction or positional embedding process.
