@@ -20,7 +20,7 @@ By combining the patch extraction, positional embedding, and self-attention mech
 * Training and evaluation scripts to facilitate model training and performance assessment.
 * Fine-tuning capabilities to adapt the model to specific datasets.
 * Support for various datasets commonly used in image classification, such as CIFAR-10, ImageNet, etc.
-* Integration with popular deep learning libraries, such as PyTorch, TensorFlow, or Keras.
+* Integration with popular deep learning libraries.
 
 
 ## Requirements
