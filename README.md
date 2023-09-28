@@ -15,13 +15,12 @@ By combining the patch extraction, positional embedding, and self-attention mech
 
 ## Features
 
-***
-    Implementation of the Vision Transformer model for multiclass image classification, incorporating patch extraction and positional embedding.
-    Preprocessing pipeline to prepare the input images for the Vision Transformer.
-    Training and evaluation scripts to facilitate model training and performance assessment.
-    Fine-tuning capabilities to adapt the model to specific datasets.
-    Support for various datasets commonly used in image classification, such as CIFAR-10, ImageNet, etc.
-    Integration with popular deep learning libraries, such as PyTorch, TensorFlow, or Keras.
+* Implementation of the Vision Transformer model for multiclass image classification, incorporating patch extraction and positional embedding.
+* Preprocessing pipeline to prepare the input images for the Vision Transformer.
+* Training and evaluation scripts to facilitate model training and performance assessment.
+* Fine-tuning capabilities to adapt the model to specific datasets.
+* Support for various datasets commonly used in image classification, such as CIFAR-10, ImageNet, etc.
+* Integration with popular deep learning libraries, such as PyTorch, TensorFlow, or Keras.
 
 
 ## Requirements
