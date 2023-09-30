@@ -23,7 +23,7 @@ def test(model: nn.Module,
     y_pred, y_true = [], []
     with torch.inference_mode():
         for input_data, target in test_dataloader:
-            output = model(input_data)
+            output = model(input_data.type(torch.float))
 
             loss_batch = loss_fn(output, target)
             acc_batch = acc_fn(output, target)
@@ -51,8 +51,8 @@ def test(model: nn.Module,
         plt.savefig(join(save_path, "metrics", "cm.png"))
         plt.close()
 
-        results_dict = {"acc": acc, "loss": loss}
-        results_df = pd.DataFrame(results_dict)
+        results_dict = {"acc": acc.item(), "loss": loss.item()}
+        results_df = pd.DataFrame(results_dict, index=[0])
         results_df.to_csv(join(save_path, "metrics", "test_results.csv"))
 
     return
